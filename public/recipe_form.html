@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #012c1b;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #024d3a;
+        }
+        .back-button {
+            background-color: #ccc; /* Light gray for back button */
+            color: black; /* Black text */
+            margin-top: 10px; /* Space above */
+        }
+    </style>
+</head>
+<body>
+    <h2>Submit a Recipe</h2>
+    <form action="/submit-recipe" method="post">
+        <label for="recipe_name">Recipe Name:</label>
+        <input type="text" id="recipe_name" name="recipe_name" required>
+
+        <label for="recipe_owner">Recipe Owner:</label>
+        <input type="text" id="recipe_owner" name="recipe_owner" required>
+
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+        <label for="recipe_image">Recipe Image URL:</label>
+        <input type="text" id="recipe_image" name="recipe_image">
+
+        <button type="submit">Submit Recipe</button>
+        <button type="button" class="back-button" onclick="window.location.href='index.html'">Back to Home</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolas De Recetas - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Elegant Font -->
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            padding: 30px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .hero {
+            text-align: center;
+            margin: 60px 20px;
+            background-color: #ecf0f1;
+            padding: 50px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 40px auto;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+        .search-bar input:focus {
+            border-color: #2c3e50;
+        }
+        .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+        .recipe-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .recipe-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipe-card h3 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 15px 0;
+            font-weight: 600;
+        }
+        .recipe-card p {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .recipe-card button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+        .recipe-card button:hover {
+            background-color: #2c3e50;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .buttons button {
+            padding: 14px 28px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .buttons button:hover {
+            background-color: #5f6367;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bolas De Recetas</h1>
+</header>
+
+<section class="hero">
+    <h2>Discover Amazing Recipes!</h2>
+    <p>Explore, rate, and share your favorite dishes with the world. Join the community and enjoy cooking.</p>
+</section>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search for recipes..." onkeyup="searchRecipes()">
+</div>
+
+<div class="buttons">
+    <button onclick="window.location.href='login.html'">Login</button>
+    <button onclick="window.location.href='register.html'">Register</button>
+</div>
+
+<section class="recipes">
+    <div class="recipe-card">
+        <img src="images/PastaCarbonara_Shot7_13.jpg" alt="Spaghetti Carbonara">
+        <h3>Spaghetti Carbonara</h3>
+        <p>Rating: ⭐⭐⭐⭐⭐</p>
+        <button onclick="window.location.href='displayrecipes.js'">View Recipe</button>
+    </div>
+
+    <div class="recipe-card">
+        <img src="images/best-chocolate-cake-recipe-from-scratch-8.jpg" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>Rating: ⭐⭐⭐⭐</p>
+        <button onclick="window.location.href='recipe-detail.html'">View Recipe</button>
+    </div>
+
+    <div class="recipe-card">
+        <img src="images/Vanilla-Latte-001.webp" alt="Vanilla Latte">
+        <h3>Vanilla Latte</h3>
+        <p>Rating: ⭐⭐⭐⭐⭐</p>
+        <button onclick="window.location.href='recipe_detail.html'">View Recipe</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Bolas De Recetas. All rights reserved.</p>
+</footer>
+
+<script>
+    function searchRecipes() {
+        const input = document.querySelector('.search-bar input').value.toLowerCase();
+        const recipes = document.querySelectorAll('.recipe-card');
+
+        recipes.forEach(recipe => {
+            const title = recipe.querySelector('h3').textContent.toLowerCase();
+            if (title.includes(input)) {
+                recipe.style.display = "block";
+            } else {
+                recipe.style.display = "none";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

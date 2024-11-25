@@ -1,0 +1,28 @@
+{
+  "name": "bolas-de-receta",
+  "version": "1.0.0",
+  "description": "A recipe website for admins and users to share and view recipes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "recipe",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "bolas-de-receta": "file:",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

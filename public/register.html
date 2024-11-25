@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolas De Recetas - Register</title>
+    <button onclick="window.location.href='index.html'">Home</button>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            background-image: url("C:\Users\wanjo\OneDrive - Strathmore University\IAP\Bolas De Receta\18MAKE-AHEAD-SALADSrex3-fruit-qfgz-superJumbo.jpg");
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Welcome</h2>
+    <form action="/register" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="role">User Role:</label>
+        <select id="role" name="role">
+            <option value="user">User</option>
+            <option value="chef">Chef</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
